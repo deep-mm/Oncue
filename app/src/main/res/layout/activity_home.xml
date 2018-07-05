@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text"
+    tools:context="com.codeadventure.oncue.Home">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|clip_vertical|clip_horizontal"
+                    android:text="OnCue"
+                    android:textColor="@color/text"
+                    android:textStyle="italic"
+                    android:textSize="25sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="7sp"
+                    android:layout_marginEnd="10dp"
+                    android:typeface="serif"
+                    />
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:src="@drawable/search"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:paddingRight="10sp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:id="@+id/imageButton2" />-->
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/date1"
+        android:layout_height="wrap_content"
+        android:background="@color/bar">
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="100sp"
+            android:textColor="@color/text"
+            android:text="12"
+            android:typeface="serif"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date2"
+            android:text="January, 1997"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:id="@+id/month"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15sp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_below="@+id/date1">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reminder_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/fragment_reminders"
+        android:layout_below="@+id/date1"
+        />
+        </ScrollView>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:text="No reminders set currently!"
+        android:textSize="20sp"
+        android:layout_marginTop="50sp"
+        android:padding="25sp"
+        android:id="@+id/noreminder"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date1" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
