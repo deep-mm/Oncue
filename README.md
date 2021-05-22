@@ -1,7 +1,7 @@
 # Oncue
 The Reminder App
 
-<img src="https://user-images.githubusercontent.com/29853549/119227110-f8f82f80-bb29-11eb-8add-21c175e4e0ec.png" alt="Oncue Logo" width="200" height="200" align="center"/>
+<img src="https://user-images.githubusercontent.com/29853549/119227110-f8f82f80-bb29-11eb-8add-21c175e4e0ec.png" alt="Oncue Logo" width="200" height="200"/>
 
 **Aim:** Develop an android app, which is basically a reminder app with an astonishing feature to remind you not only based on time but based on people around
 
