@@ -3,6 +3,8 @@ The Reminder App
 
 <img src="https://user-images.githubusercontent.com/29853549/119227110-f8f82f80-bb29-11eb-8add-21c175e4e0ec.png" alt="Oncue Logo" width="200" height="200"/>
 
+![App](https://user-images.githubusercontent.com/29853549/119227169-42e11580-bb2a-11eb-9bfe-cb34f9945404.png)
+
 **Aim:** Develop an android app, which is basically a reminder app with an astonishing feature to remind you not only based on time but based on people around
 
 The Android app detects the people around, and if a person sets a reminder, say for example,
